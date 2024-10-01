@@ -4,7 +4,6 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { FaMicrophone, FaMicrophoneSlash, FaVolumeMute, FaVolumeUp , FaUser, FaRobot, } from 'react-icons/fa';
 import {ChakraProvider,Box,Button,Text,VStack,HStack,Spinner,Heading,Divider,useBreakpointValue,Flex} from '@chakra-ui/react';
-import {} from 'dotenv'
 import axios from 'axios';
 import Navbar1 from '../components/Navbar1';
 
