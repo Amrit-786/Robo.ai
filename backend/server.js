@@ -16,8 +16,7 @@ app.get('/', (req,res)=>{
 })
 
 mongoose.connect(process.env.MONGO_URI,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+    
 })
 .then(()=> console.log('mongodb connected'))
 .catch((err)=> console.log(err));
@@ -72,6 +71,7 @@ app.post('/api/voice', async(req,res)=>{
         res.status(500).json({error:'Failed to generate content'});
     }
 });
+
 
 
 app.listen(PORT,()=>{
